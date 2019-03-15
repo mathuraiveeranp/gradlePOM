@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="samplemaven.testcases.TC002_Login2">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="login"/>
+          <include name="startApplication"/>
+          <include name="startTestcase"/>
+          <include name="setData"/>
+          <include name="stopResult"/>
+          <include name="startResult"/>
+        </methods>
+      </class> <!-- samplemaven.testcases.TC002_Login2 -->
+      <class name="samplemaven.testcases.TC001_Login">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="login"/>
+          <include name="startApplication"/>
+          <include name="startTestcase"/>
+          <include name="stopResult"/>
+          <include name="startResult"/>
+          <include name="setData"/>
+        </methods>
+      </class> <!-- samplemaven.testcases.TC001_Login -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
